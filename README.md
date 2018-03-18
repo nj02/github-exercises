@@ -23,6 +23,7 @@ nothing to commit, working tree clean
 ```
 
 4. Move to your feature branch
+
   4a. Create you own feature branch if you are working in a new feature, for instance, `adding-london`
   ```
   git checkout -b adding-london
@@ -39,6 +40,7 @@ nothing to commit, working tree clean
 5. Do some modifications to the repository. For example, add your dream destination to `index.html`
 
 6. Add your changes to the working branch
+
   6a. Track all the changes
   ```
   git add .
