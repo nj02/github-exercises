@@ -1,37 +1,70 @@
-## Welcome to GitHub Pages
+## Github basic tutorial
 
-You can use the [editor on GitHub](https://github.com/soniarodriguez/github-exercises/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+1. Bring the repository to your local machine
+```
+git clone https://github.com/soniarodriguez/github-exercises.git
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+2. Move to the repository folder
+```
+cd github-exercises
+```
 
-### Jekyll Themes
+3. Check the status of your local repository
+```
+git status
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/soniarodriguez/github-exercises/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Expected output should be
+```
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+```
 
-### Support or Contact
+4. Move to your feature branch
+  4a. Create you own feature branch if you are working in a new feature, for instance, `adding-london`
+  ```
+  git checkout -b adding-london
+  ```
+  4b. Move to an existing feature branch, to work in a work-in-progress feature, for instance, `adding-march-destinations`
+  ```
+  adding-march-destinations 
+  ```
+  If you move to a feature branch, first pull the last changes in case someone else has committed something to that branch:
+  ```
+  git pull
+  ```
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+5. Do some modifications to the repository. For example, add your dream destination to `index.html`
+
+6. Add your changes to the working branch
+  6a. Track all the changes
+  ```
+  git add .
+  ```
+  6b. Track the change of a file modified, for instance:
+  ```
+  git add index.html
+  ```
+
+7. Package your changes in a commit and label them with a meaningful message
+```
+git commit -m “Added Thailand destination”
+  ```
+
+8. Add your changes to the remote repository. Then, check the status
+```
+git push
+git status
+```
+
+9. Open the browser and visit: https://github.com/soniarodriguez/github-exercises/
+
+10. Check that your changes are under your working branch
+
+11. When you think that your new or working feature branch is ready to by merge with master, create a pull request
+
+12. Merge the master branch with the master branch
+
+13. Your changes should be visible at: https://soniarodriguez.github.io/github-exercises/
